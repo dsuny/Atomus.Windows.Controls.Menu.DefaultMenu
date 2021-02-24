@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Atomus.Windows.Controls.Menu.DefaultMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="360"
+             Loaded="UserControl_Loaded"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26"/>
+            <ColumnDefinition Width="21"/>
+            <ColumnDefinition Width="21"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Content="Menu" />
+
+        <Button Grid.Row="1" Grid.Column="0" x:Name="Refresh" BorderThickness="0" Background="{Binding RefreshBackgroundImage}" Command="{Binding SearchCommand}" />
+        <Button Grid.Row="1" Grid.Column="1" x:Name="ExpendAll" BorderThickness="0" Background="{Binding ExpendAllBackgroundImage}" Command="{Binding ExpandAllCommand}" />
+        <Button Grid.Row="1" Grid.Column="2" x:Name="CollapseAll" BorderThickness="0" Background="{Binding CollapseAllBackgroundImage}" Command="{Binding CollapseAllCommand}" />
+
+        <TreeView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="treeView" ItemsSource="{Binding MenuData}">
+        </TreeView>
+    </Grid>
+</UserControl>

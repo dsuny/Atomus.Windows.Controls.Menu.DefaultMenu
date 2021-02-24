@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8860A10F-BC41-42A3-A236-44E75D6E5ED3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{E4BCEB0B-F46A-4F4C-8781-96B1870948E7}"
+	ProjectSection(SolutionItems) = preProject
+		src\Controllers\DefaultMenuController.cs = src\Controllers\DefaultMenuController.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{B4B37A02-171C-4C7E-AA2F-8E516DE12710}"
+	ProjectSection(SolutionItems) = preProject
+		src\Models\DefaultMenuSearchModel.cs = src\Models\DefaultMenuSearchModel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{79B24BC4-735B-4FFD-870A-558F2EFE06C2}"
+	ProjectSection(SolutionItems) = preProject
+		src\View\DefaultMenu.xaml = src\View\DefaultMenu.xaml
+		src\View\DefaultMenu.xaml.cs = src\View\DefaultMenu.xaml.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModel", "ViewModel", "{60B6B6ED-D056-4E31-94A7-505EC578B41A}"
+	ProjectSection(SolutionItems) = preProject
+		src\ViewModel\DefaultMenuViewModel.cs = src\ViewModel\DefaultMenuViewModel.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atomus.Windows.Controls.Menu.DefaultMenu(dotNet)", "dotNet\Atomus.Windows.Controls.Menu.DefaultMenu(dotNet).csproj", "{38B88603-2093-4036-B2E5-D8C2E0DAC71E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B88603-2093-4036-B2E5-D8C2E0DAC71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B88603-2093-4036-B2E5-D8C2E0DAC71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B88603-2093-4036-B2E5-D8C2E0DAC71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B88603-2093-4036-B2E5-D8C2E0DAC71E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4BCEB0B-F46A-4F4C-8781-96B1870948E7} = {8860A10F-BC41-42A3-A236-44E75D6E5ED3}
+		{B4B37A02-171C-4C7E-AA2F-8E516DE12710} = {8860A10F-BC41-42A3-A236-44E75D6E5ED3}
+		{79B24BC4-735B-4FFD-870A-558F2EFE06C2} = {8860A10F-BC41-42A3-A236-44E75D6E5ED3}
+		{60B6B6ED-D056-4E31-94A7-505EC578B41A} = {8860A10F-BC41-42A3-A236-44E75D6E5ED3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92D1C8B1-1E40-4456-B7A4-48DC433EF2A9}
+	EndGlobalSection
+EndGlobal
